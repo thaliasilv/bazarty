@@ -19,9 +19,7 @@ function tipo_especifico($a) {
     if ($input['campo'] == FALSE) {
         $errors[] = 'Informe um ano valido.';
     }
-
-//
-    //function strip_tags()
+}
 
     function nao_vazio_e_limite($a) {
         if ((strlen(trim($a)) == 0) && (strlen(trim($a)) <= 12 )) {
