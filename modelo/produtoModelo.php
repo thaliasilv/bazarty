@@ -27,3 +27,19 @@ function MostrarProdutoPorCodigo($cod){
     
     return $produtos;
 }
+
+function deletarProduto($id) {
+      $comando= "DELETE FROM produto WHERE id=$idProduto";
+     $conexao= conn();
+     $resultado= mysqli_query($conexao, $conexao);
+   
+     if($resultado==true){
+       echo "Deu certo!";
+   }else {
+       echo "Deu errado";
+   }
+}
+
+ ?>
+    
+}
