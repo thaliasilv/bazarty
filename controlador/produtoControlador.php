@@ -63,3 +63,7 @@ function ver($cod){
     $dados["produto"] = MostrarProdutoPorCodigo($cod);
     exibir('produtos/visualizar', $dados);
 }
+function deletar($id) {
+    deletarProduto($id);
+    redirecionar("produtos/listar");
+}
