@@ -18,7 +18,9 @@
                 <td><?= $produto["nome"]?></td>
                 <td><?= $produto["preco"]?></td>
                 <td><a href="./produto/ver/<?=$produto["cod"]?>">Ver detalhes</a></td>
+                <td><a href="./produto/deletar/<?=$a["id"]?> </a>"
             </tr>
+            
          
             <?php endforeach;?>
         </table>
